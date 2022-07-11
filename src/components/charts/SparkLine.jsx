@@ -3,7 +3,7 @@ import {
   SparklineComponent,
   Inject,
   SparklineTooltip,
-} from "@syncfusion/ej2-react-charts/index";
+} from "@syncfusion/ej2-react-charts";
 
 const SparkLine = ({ id, color, currentColor, height, width, data, type }) => {
   return (

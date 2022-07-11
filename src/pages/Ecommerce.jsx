@@ -8,6 +8,7 @@ import {
   earningData,
   SparklineAreaData,
   ecomPieChartData,
+  stackedPrimaryXAxis,
 } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 
@@ -57,7 +58,7 @@ const Ecommerce = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-10 justify-center">
+      <div className="flex flex-wrap gap-10 justify-center ">
         <div className="bg-white dark:bg-secondary-dark-bg dark:text-gray-200 md:w-780 w-full m-3 p-4 rounded-2xl ">
           <div className="flex justify-between">
             <p className="font-semibold text-sm">Revenue updates</p>
@@ -109,7 +110,7 @@ const Ecommerce = () => {
                 />
               </div>
             </div>
-            
+            <Stacked width="300px" height="340px" id="stacked-chart" />
           </div>
         </div>
       </div>
