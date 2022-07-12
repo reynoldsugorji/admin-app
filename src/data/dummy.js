@@ -130,14 +130,6 @@ export const EditorData = () => (
       faster pace than you’re comfortable with, check out this overview of React
       by Tania Rascia. It introduces the most important React concepts in a
       detailed, beginner-friendly way. Once you’re done, give the documentation
-      another try! React for Designers If you’re coming from a design
-      background, these resources are a great place to get started. JavaScript
-      Resources The React documentation assumes some familiarity with
-      programming in the JavaScript language. You don’t have to be an expert,
-      but it’s harder to learn both React and JavaScript at the same time. We
-      recommend going through this JavaScript overview to check your knowledge
-      level. It will take you between 30 minutes and an hour but you will feel
-      more confident learning React.
     </h3>
   </div>
 );
