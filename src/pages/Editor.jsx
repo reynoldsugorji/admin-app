@@ -1,5 +1,4 @@
 import React from "react";
-import { links } from "../data/dummy";
 import {
   HtmlEditor,
   Image,
