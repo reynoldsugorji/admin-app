@@ -1,8 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-
-import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
+import { IoCloseCircle } from "react-icons/io5";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import { links } from "../data/dummy";
@@ -17,10 +16,10 @@ const Sidebar = () => {
     }
   };
   const activeLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-400 text-md  m-2";
+    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-blue-700 text-md  m-2";
 
-  const normalLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray text-md  m-2";
+  const normalLink = `flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 dark:text-gray-200
+     dark:hover:text-black hover:bg-blue-200 hover:text-blue-700 text-md  m-2`;
   return (
     <div className="ml-3 h-screen pb-10 overflow-auto md:overflow-hidden md:hover:overflow-auto">
       {activeMenu && (
@@ -29,11 +28,14 @@ const Sidebar = () => {
             <Link
               to="/"
               onClick={handleCloseSideBar}
-              className="items-center gap-3 mt-4 ml-3 flex font-extrabold tracking-tight dark:text-white text-slate-900"
+              className="justify-between w-full pr-4 items-center gap-3 mt-4 ml-3 flex font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware className="" />
-              <span>ReYnolds</span>
+              <div>ReYnolds</div>
+              <div>
+                <IoCloseCircle onClick={() => setActiveMenu(false)} className="text-blue-600 text-2xl" />
+              </div>
             </Link>
+            
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
                 type="button"

@@ -1,16 +1,9 @@
 import React from "react";
-import { BsCurrencyDollar } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 
-import { Stacked, Pie, Button, SparkLine } from "../components";
+import { Stacked, Button, SparkLine } from "../components";
 
-import {
-  earningData,
-  SparklineAreaData,
-  ecomPieChartData,
-  stackedPrimaryXAxis,
-} from "../data/dummy";
-import { useStateContext } from "../contexts/ContextProvider";
+import { earningData, SparklineAreaData } from "../data/dummy";
 
 const Ecommerce = () => {
   return (
@@ -20,7 +13,7 @@ const Ecommerce = () => {
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-300">Earnings</p>
-              <p className="text-2xl text-gray-800">$63,448.78</p>
+              <p className="text-2xl dark:text-gray-200 text-gray-800">$63,448.78</p>
             </div>
           </div>
           <div className="mt-6">
